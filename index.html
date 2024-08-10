@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garbage Collection System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Garbage Collection System</h1>
+        <div class="button-container">
+            <button id="start" class="btn">Start Location Sharing</button>
+            <button id="stop" class="btn stop">Stop Location Sharing</button>
+        </div>
+        <div class="navigation">
+            <a href="logs.html">View Server Logs</a>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        const socket = io();
+
+        document.getElementById('start').addEventListener('click', () => {
+            socket.emit('start');
+        });
+
+        document.getElementById('stop').addEventListener('click', () => {
+            socket.emit('stop');
+        });
+    </script>
+</body>
+</html>

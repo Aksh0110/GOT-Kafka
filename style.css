@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.button-container {
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #ddd;
+}
+
+.btn.stop {
+    background-color: #ff4b4b;
+    color: #fff;
+}
+
+.btn.stop:hover {
+    background-color: #ff2b2b;
+}
+
+.navigation {
+    margin-top: 20px;
+}
+
+.navigation a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+}
+
+.logs-container {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 4px;
+    height: 200px;
+    overflow-y: scroll;
+    text-align: left;
+    border: 1px solid #ccc;
+}
+
+.log-entry {
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+.log-entry:last-child {
+    border-bottom: none;
+}
